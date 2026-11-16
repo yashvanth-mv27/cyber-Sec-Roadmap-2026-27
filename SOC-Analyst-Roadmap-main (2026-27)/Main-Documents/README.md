@@ -41,6 +41,7 @@ This folder groups the core SOC analyst learning documents into a single navigat
 - [35 - Privacy, Cryptography & PQC](../35-Privacy-Cryptography-PQC.md)
 - [36 - Architecture Governance & GRC](../36-Architecture-Governance-GRC.md)
 - [37 - Security Leadership 2027](../37-Security-Leadership-2027.md)
+- [38 - Vulnerability, Zero-Day & WAF Defense](../Vulnerability-Zero-Day-and-WAF/README.md)
 
 ## Quick Access
 
