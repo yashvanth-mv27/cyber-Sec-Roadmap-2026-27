@@ -1,16 +1,15 @@
 <div align="center">
 
-# 🛡️ SOC ANALYST ROADMAP
-### 2026–27 · From first alert to security architecture
+# 🛡️ SOC OPERATIONS & SECURITY LEADERSHIP ROADMAP
+### 2026–27 · From first alert to resilient enterprise defense
 
-**LEARN THE SIGNALS　·　INVESTIGATE WITH EVIDENCE　·　ENGINEER THE DEFENSE**
+**DETECT WITH CONTEXT　·　RESPOND WITH DISCIPLINE　·　LEAD WITH EVIDENCE**
 
-[![Roadmap](https://img.shields.io/badge/ROADMAP-2026%E2%80%9327-0B1020?style=for-the-badge&logo=github&logoColor=white)](#-roadmap-dashboard)
-[![Foundation](https://img.shields.io/badge/01%E2%80%9310-FOUNDATION-0284C7?style=for-the-badge&logo=bookstack&logoColor=white)](#-blue-foundation--core-skills)
-[![SOC](https://img.shields.io/badge/11%E2%80%9322-SOC%20ENGINEERING-15803D?style=for-the-badge&logo=shield&logoColor=white)](#-green-soc--engineering)
-[![Advanced](https://img.shields.io/badge/23%E2%80%9338-ADVANCED%20DEFENSE-6D28D9?style=for-the-badge&logo=target&logoColor=white)](#-violet-advanced--architecture)
+[![FOUNDATION](https://img.shields.io/badge/01%E2%80%9310-FOUNDATION-0284C7?style=for-the-badge&logo=bookstack&logoColor=white)](#-complete-roadmap)
+[![SOC OPERATIONS](https://img.shields.io/badge/11%E2%80%9322-SOC%20OPERATIONS-15803D?style=for-the-badge&logo=shield&logoColor=white)](#-soc-operations-kpi-framework)
+[![ADVANCED DEFENSE](https://img.shields.io/badge/23%E2%80%9338-ADVANCED%20DEFENSE-6D28D9?style=for-the-badge&logo=target&logoColor=white)](#-architecture-maturity-model)
 
-[🧭 Roadmap](#-complete-roadmap) · [🎓 Certifications](#-certification-pathways) · [🔭 Future skills](#-future-security-drivers) · [🧰 Defensive tools](#-defensive-tool-guides)
+[📊 Operations KPIs](#-soc-operations-kpi-framework) · [👥 Team roles](#-team-and-role-matrix) · [🏛️ Maturity](#-architecture-maturity-model) · [🧭 Leadership](#-leadership-roadmap) · [🧰 Tool guides](#-root-level-defensive-tool-guides)
 
 </div>
 
@@ -19,7 +18,32 @@
 
 ---
 
-## 📊 SOC roadmap dashboard
+## 📟 Executive SOC overview
+
+> **KPI strip — measurement framework, not live repository metrics.** Establish baselines and targets from your organization’s risk, staffing, business hours, telemetry, and regulatory needs. Do not compare teams without consistent definitions and context.
+
+<div align="center">
+
+![Coverage](https://img.shields.io/badge/01%20%E2%80%A2%20VISIBILITY-Telemetry%20coverage-0B1020?style=for-the-badge&labelColor=2563EB)
+![Detection](https://img.shields.io/badge/02%20%E2%80%A2%20DETECTION-Quality%20%26%20validation-0B1020?style=for-the-badge&labelColor=0891B2)
+![Response](https://img.shields.io/badge/03%20%E2%80%A2%20RESPONSE-Time%20%26%20outcomes-0B1020?style=for-the-badge&labelColor=16A34A)
+![Resilience](https://img.shields.io/badge/04%20%E2%80%A2%20RESILIENCE-Recovery%20readiness-0B1020?style=for-the-badge&labelColor=7C3AED)
+
+</div>
+
+| Executive measure | Example definition | Leadership question |
+|---|---|---|
+| **Telemetry coverage** | In-scope critical assets reporting the required, usable security data | Which important services or identities are not visible to responders? |
+| **Detection quality** | Tested detections, actionable alert rate, false-positive review, and known coverage gaps | Are detections reliable, explainable, and mapped to relevant risks? |
+| **Response performance** | Time to acknowledge, investigate, contain, and recover—segmented by severity and service hours | Where do handoffs, approvals, or missing evidence create delay? |
+| **Case outcomes** | Case volume, severity, recurrence, root-cause themes, and closure quality | Are incidents preventing recurrence or only closing tickets? |
+| **Exposure remediation** | Risk-prioritized remediation age and validation status for critical exposures | Are owners reducing material risk within agreed timeframes? |
+| **Automation assurance** | Workflow success/failure, human approval, audit completeness, and rollback readiness | Is automation safe, measurable, and recoverable when it fails? |
+| **Resilience** | Exercise findings, recovery test results, and tracked corrective actions | Can critical services recover under realistic incident conditions? |
+
+**Executive review cadence:** operational review for current workload and blockers · monthly trend review for outcomes and control gaps · quarterly risk and investment review with accountable owners.
+
+## 🧭 Roadmap dashboard
 
 | Learning stage | Mission | Evidence to build |
 |---|---|---|
@@ -40,6 +64,58 @@ flowchart LR
     G --> H[🤖 AI / LLM / agent security]
     H --> I[🏛️ Architecture & leadership]
 ```
+
+---
+
+## 👥 Team and role matrix
+
+Roles vary by organization; one person may cover multiple responsibilities. Define clear decision rights, escalation routes, and coverage expectations for your own operating model.
+
+| Role | Primary responsibilities | Key interfaces | Example outcomes |
+|---|---|---|---|
+| **SOC L1 / Monitoring Analyst** | Validate alerts, enrich context, document evidence, escalate to playbooks | Service desk, L2, incident coordinator | Complete triage record; timely escalation |
+| **SOC L2 / Incident Analyst** | Investigate incidents across endpoint, identity, network, and cloud | L1, DFIR, IT/service owners | Evidence-based incident assessment and response recommendation |
+| **SOC L3 / Incident Lead** | Coordinate complex investigations, scope impact, guide containment and recovery | Incident commander, legal/privacy, business owners | Shared incident picture, decisions, recovery tracking |
+| **Detection Engineer** | Build, test, tune, document, and retire analytics | SOC analysts, data platform, threat intelligence | Reliable detections with tests, ownership, and coverage rationale |
+| **Threat Hunter / Intelligence Analyst** | Form hypotheses, assess intelligence, identify telemetry gaps | Detection engineering, incident response, risk teams | Reproducible hunt findings and actionable context |
+| **DFIR Specialist** | Preserve and analyze evidence under approved procedures | Incident lead, legal/privacy, system owners | Defensible findings, timeline, and documented limitations |
+| **SOAR / Platform Engineer** | Maintain ingestion, integrations, workflows, access, and platform reliability | Detection, IT, cloud, identity teams | Governed and observable security platform and automation |
+| **SOC Manager / Director** | Set service model, staffing, priorities, metrics, quality, and improvement | CISO, business leadership, technology owners | Risk-aligned operating plan and transparent performance review |
+| **Security Architect / Principal Engineer** | Set target patterns, trust boundaries, resilience, and technical guardrails | Product/platform leaders, GRC, executives | Reusable architecture decisions tied to business risk |
+
+**Governance principle:** investigation teams recommend actions; designated business and technical owners authorize actions according to incident policy and impact. Keep high-impact containment decisions auditable.
+
+## 🏛️ Architecture maturity model
+
+Use this as a discussion aid, not a certification or universal score. Assess each capability separately, record evidence, and prioritize improvements by risk and feasibility.
+
+| Level | Name | Typical characteristics | Next-step focus |
+|---|---|---|---|
+| **1** | **Ad hoc** | Reactive alert handling; unclear ownership; inconsistent records; limited visibility | Identify critical assets, assign owners, establish incident intake and evidence practices |
+| **2** | **Repeatable** | Documented triage and escalation; core log sources; basic case tracking and access control | Standardize severity, playbooks, retention, and quality review |
+| **3** | **Defined** | Governed SOC processes; detection lifecycle; cross-domain telemetry; regular exercises and reporting | Add coverage objectives, testing, threat-informed prioritization, and service ownership |
+| **4** | **Measured** | Data quality and operational outcomes measured; detection tests; controlled automation; recovery evidence | Use trend analysis to tune investment, reduce systemic gaps, and validate resilience |
+| **5** | **Adaptive** | Continuous improvement across identity, cloud, endpoint, applications, and AI; architecture aligned to changing risk | Sustain independent validation, learning loops, and accountable risk decisions |
+
+**Assessment dimensions:** people and operating model · telemetry and data governance · detection and response · identity/cloud/platform coverage · automation safety · resilience and recovery · metrics and executive oversight.
+
+## 🧭 Leadership roadmap
+
+A practical progression from technical contribution to organization-wide security leadership:
+
+| Step | Leadership capability | Practice / artifact |
+|---|---|---|
+| **1 · Own a case** | Communicate facts, confidence, impact, and open questions clearly | Concise incident brief and evidence timeline |
+| **2 · Improve a workflow** | Find repeated friction and coordinate a measured improvement | Before/after process map with quality and risk considerations |
+| **3 · Lead a technical initiative** | Set scope, owners, milestones, dependencies, and acceptance criteria | Detection, telemetry, or resilience project plan |
+| **4 · Design a service** | Balance coverage, staffing, technology, privacy, reliability, and cost | SOC service definition and operating-level measures |
+| **5 · Influence architecture** | Explain trust boundaries, trade-offs, exceptions, and residual risk | Architecture decision record and review presentation |
+| **6 · Advise executives** | Translate security signals into business impact, choices, and accountable decisions | One-page risk brief with options and recommended action |
+| **7 · Build sustainable capability** | Develop people, succession, exercises, governance, and continuous learning | Skills matrix, tabletop lessons, and quarterly improvement plan |
+
+**Leadership habits:** make uncertainty explicit · preserve evidence · invite challenge · assign an owner and due date to decisions · communicate impact without overstating certainty · learn from incidents without blame.
+
+---
 
 ## 🧭 Complete roadmap
 
@@ -98,7 +174,7 @@ Explore the 38 learning topics from the `SOC-Analyst-Roadmap-main (2026-27)` mat
 | 37 | 🧭 [Security Leadership 2027](SOC-Analyst-Roadmap-main%20(2026-27)/37-Security-Leadership-2027.md) | Technical strategy, communication, team leadership |
 | 38 | 🛡️ [Vulnerability, Zero-Day & WAF Defense](SOC-Analyst-Roadmap-main%20(2026-27)/Vulnerability-Zero-Day-and-WAF/README.md) | Defensive vulnerability and web application protection |
 
-## 🧰 Defensive tool guides · root-level references
+## 🧰 Root-level defensive tool guides
 
 These standalone guides live in the repository root—not inside the roadmap folder.
 
@@ -163,6 +239,6 @@ Select certifications according to your goals, experience, region, budget, and e
 [![Least privilege](https://img.shields.io/badge/PRINCIPLE-Least%20privilege-0B1020?style=flat-square&labelColor=16A34A)](#)
 [![Resilience](https://img.shields.io/badge/PRINCIPLE-Resilience%20by%20design-0B1020?style=flat-square&labelColor=7C3AED)](#)
 
-**Built for curious defenders — from first alert to security architecture. 💙**
+**Built for curious defenders and accountable security leaders.**
 
 </div>
