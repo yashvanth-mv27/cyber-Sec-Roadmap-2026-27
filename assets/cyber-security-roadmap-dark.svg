@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Cyber Security Roadmap 2026–27</title>
+  <desc id="desc">A dark, neon-accented learning path from foundations through SOC operations and advanced defense to governance and resilience.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset=".55" stop-color="#101b35"/><stop offset="1" stop-color="#17102d"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset=".52" stop-color="#34d399"/><stop offset="1" stop-color="#c084fc"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#8ba3cf"><path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200"/><path d="M100 0V420M220 0V420M340 0V420M460 0V420M580 0V420M700 0V420M820 0V420M940 0V420M1060 0V420"/></g>
+  <text x="70" y="102" fill="#e5efff" font-family="Arial,sans-serif" font-size="42" font-weight="700">CYBER SECURITY ROADMAP</text>
+  <text x="73" y="145" fill="#a9bbd8" font-family="Arial,sans-serif" font-size="20">2026–27  ·  From first alert to resilient enterprise defense</text>
+  <text x="73" y="188" fill="#d5e2f5" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">DETECT WITH CONTEXT  ·  RESPOND WITH DISCIPLINE  ·  LEAD WITH EVIDENCE</text>
+  <path d="M120 275 C300 275 300 275 440 275 S650 275 770 275 S960 275 1080 275" fill="none" stroke="url(#line)" stroke-width="5" filter="url(#glow)"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <circle cx="150" cy="275" r="17" fill="#0b172b" stroke="#38bdf8" stroke-width="4"/><text x="150" y="324" fill="#bae6fd" font-size="16" font-weight="700">01–10 · FOUNDATIONS</text><text x="150" y="350" fill="#94a3b8" font-size="13">Network · systems · security</text>
+    <circle cx="465" cy="275" r="17" fill="#0b172b" stroke="#34d399" stroke-width="4"/><text x="465" y="324" fill="#a7f3d0" font-size="16" font-weight="700">11–22 · SOC &amp; ENGINEERING</text><text x="465" y="350" fill="#94a3b8" font-size="13">Triage · detection · response</text>
+    <circle cx="785" cy="275" r="17" fill="#0b172b" stroke="#c084fc" stroke-width="4"/><text x="785" y="324" fill="#e9d5ff" font-size="16" font-weight="700">23–38 · ADVANCED DEFENSE</text><text x="785" y="350" fill="#94a3b8" font-size="13">Architecture · resilience · GRC</text>
+    <circle cx="1080" cy="275" r="17" fill="#0b172b" stroke="#fbbf24" stroke-width="4"/><text x="1080" y="324" fill="#fde68a" font-size="16" font-weight="700">OUTCOME</text><text x="1080" y="350" fill="#94a3b8" font-size="13">Evidence-led leadership</text>
+  </g>
+</svg>
