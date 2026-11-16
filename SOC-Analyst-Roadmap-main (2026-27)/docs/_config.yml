@@ -1,0 +1,12 @@
+title: Cyber Defense Learning Portal
+description: A polished, defensive cybersecurity learning portal for SOC operations, threat hunting, threat intelligence, cloud security, and security architecture.
+theme: minima
+markdown: kramdown
+show_excerpts: true
+permalink: pretty
+header_pages:
+  - index.md
+  - certifications.md
+  - labs.md
+sass:
+  style: compressed

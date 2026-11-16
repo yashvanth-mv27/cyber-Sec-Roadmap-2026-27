@@ -1,0 +1,13 @@
+flowchart TB
+ A[Business risk and architecture requirements] --> B[Threat modeling and trust boundaries]
+ B --> C[Zero Trust and identity control plane]
+ B --> D[Telemetry and detection platform]
+ B --> E[Cloud and workload security]
+ B --> F[AI / RAG / agent security]
+ C --> G[Security operations and response]
+ D --> G
+ E --> G
+ F --> G
+ G --> H[Control validation and resilience]
+ H --> I[Risk governance and engineering roadmap]
+ I --> B

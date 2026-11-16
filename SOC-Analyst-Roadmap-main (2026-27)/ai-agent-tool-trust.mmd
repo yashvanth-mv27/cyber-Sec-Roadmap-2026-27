@@ -1,0 +1,12 @@
+flowchart LR
+ U[User] --> IAM[Identity / session policy]
+ IAM --> APP[Agent application]
+ DOC[Untrusted RAG content] --> RET[Retrieval / provenance]
+ RET --> APP
+ APP --> LLM[LLM reasoning]
+ LLM --> REQ[Proposed tool action]
+ REQ --> AUTH{Independent authorization}
+ AUTH -->|Denied| AUD[Audit / notify]
+ AUTH -->|Approved| TOOL[Scoped tool execution]
+ TOOL --> AUD
+ AUD --> OBS[Monitoring and evaluation]

@@ -1,0 +1,30 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --portal-ink: #172033;
+  --portal-blue: #087ea4;
+  --portal-cyan: #00a7c7;
+  --portal-green: #17834b;
+  --portal-purple: #6741a5;
+  --portal-warm: #a45b00;
+  --portal-bg: #f5f8fc;
+}
+
+body { color: var(--portal-ink); background: var(--portal-bg); }
+.site-header { border-top: 5px solid var(--portal-cyan); border-bottom-color: #dce5ef; }
+.site-title, .site-title:visited { color: var(--portal-blue); font-weight: 750; letter-spacing: -.03em; }
+.page-content { line-height: 1.72; }
+.page-content h1, .page-content h2, .page-content h3 { line-height: 1.25; }
+.page-content h1 { color: var(--portal-ink); }
+.page-content h2 { color: var(--portal-blue); border-bottom: 1px solid #dce5ef; padding-bottom: .35rem; }
+.page-content h3 { color: var(--portal-purple); }
+.page-content table { border-collapse: collapse; display: block; overflow-x: auto; width: 100%; }
+.page-content th { background: #e8f4fa; color: #123b50; }
+.page-content th, .page-content td { border: 1px solid #d5e0ea; padding: .6rem .75rem; }
+.page-content blockquote { border-left: 4px solid var(--portal-cyan); background: #eaf7fb; padding: .7rem 1rem; color: #294354; }
+.page-content a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.page-content a:hover { color: var(--portal-purple); }
+.page-content pre { border: 1px solid #dce5ef; border-radius: 8px; }

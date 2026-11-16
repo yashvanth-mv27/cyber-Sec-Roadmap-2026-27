@@ -1,0 +1,12 @@
+flowchart LR
+ U[User] --> G[Input policy and authentication]
+ G --> APP[AI application]
+ APP --> RET[Retriever]
+ DOC[Untrusted documents] --> RET
+ RET --> B[Source trust and content boundary]
+ B --> LLM[LLM]
+ LLM --> T{Tool call?}
+ T -->|Yes| AUTH[Independent tool authorization]
+ AUTH --> AUD[Audit and execution]
+ T -->|No| OUT[Output validation]
+ AUD --> OUT
