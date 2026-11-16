@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ SOC OPERATIONS & SECURITY LEADERSHIP ROADMAP
+# 🛡️ Cyber Security ROADMAP
 ### 2026–27 · From first alert to resilient enterprise defense
 
 **DETECT WITH CONTEXT　·　RESPOND WITH DISCIPLINE　·　LEAD WITH EVIDENCE**
