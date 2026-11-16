@@ -10,24 +10,24 @@
 [![SOC](https://img.shields.io/badge/11%E2%80%9322-SOC%20ENGINEERING-15803D?style=for-the-badge&logo=shield&logoColor=white)](#-green-soc--engineering)
 [![Advanced](https://img.shields.io/badge/23%E2%80%9338-ADVANCED%20DEFENSE-6D28D9?style=for-the-badge&logo=target&logoColor=white)](#-violet-advanced--architecture)
 
-[🧭 Roadmap](#-complete-roadmap) · [🎓 Certifications](#-certification-pathways) · [🔭 Future skills](#-future-security-drivers) · [🧰 Tools](#-trusted-references--tools)
+[🧭 Roadmap](#-complete-roadmap) · [🎓 Certifications](#-certification-pathways) · [🔭 Future skills](#-future-security-drivers) · [🧰 Defensive tools](#-defensive-tool-guides)
 
 </div>
 
 > [!IMPORTANT]
-> **Authorized defensive learning only.** Use systems and data you own or have explicit permission to assess. Practice in isolated labs, use synthetic or public training data, and never publish credentials, secrets, or customer data.
+> **Authorized defensive learning only.** Use systems and data you own or have explicit permission to monitor or assess. Practice in isolated labs, use synthetic or public training data, and never publish credentials, secrets, or customer data.
 
 ---
 
-## 📊 Roadmap dashboard
+## 📊 SOC roadmap dashboard
 
-| Learning stages | Focus | Suggested evidence of progress |
+| Learning stage | Mission | Evidence to build |
 |---|---|---|
-| 🔹 **01–10 · Foundation** | Network, operating systems, security, cloud and SOC architecture basics | Notes, diagrams, foundational labs |
-| 🟩 **11–22 · SOC practice** | Operations, SIEM/XDR, detection, DFIR, automation and career development | Case reports, tested detections, lab portfolio |
-| 🟪 **23–38 · Advanced** | Platform engineering, AI, resilience, governance and leadership | Architecture decisions, threat models, project demos |
+| 🔹 **01–10 · Foundation** | Network, operating systems, security, cloud and SOC architecture basics | Knowledge map, foundational labs, diagrams |
+| 🟩 **11–22 · SOC operations** | Triage, SIEM/XDR, detection, DFIR, automation and career growth | Case reports, tested detections, portfolio |
+| 🟪 **23–38 · Advanced defense** | Platform engineering, AI, resilience, governance and leadership | Threat models, architecture records, project demos |
 
-**Progression:** `FOUNDATIONS → SOC ANALYST → DETECTION ENGINEER → SECURITY ENGINEER → SECURITY ARCHITECT / LEADER`
+`FOUNDATIONS → SOC ANALYST → DETECTION ENGINEER → SECURITY ENGINEER → SECURITY ARCHITECT / LEADER`
 
 ```mermaid
 flowchart LR
@@ -41,11 +41,9 @@ flowchart LR
     H --> I[🏛️ Architecture & leadership]
 ```
 
-> **Visual note:** This README uses a dark, cyber-inspired badge palette and text-first dashboard instead of external GIFs or large image embeds. GitHub controls the page theme; badge colors provide consistent visual cues in either theme. Markdown does not support dependable CSS animation, so section dividers are static for accessibility and reliable rendering.
-
 ## 🧭 Complete roadmap
 
-Explore the 38 learning topics from the `SOC-Analyst-Roadmap-main (2026-27)` materials. Each link opens its guide. This README is a navigation and learning overview.
+Explore the 38 learning topics from the `SOC-Analyst-Roadmap-main (2026-27)` materials. Each link opens its guide. Root-level tool guides are linked separately below; the roadmap folder remains unchanged.
 
 ### 🔹 Blue · Foundation & core skills
 
@@ -100,82 +98,59 @@ Explore the 38 learning topics from the `SOC-Analyst-Roadmap-main (2026-27)` mat
 | 37 | 🧭 [Security Leadership 2027](SOC-Analyst-Roadmap-main%20(2026-27)/37-Security-Leadership-2027.md) | Technical strategy, communication, team leadership |
 | 38 | 🛡️ [Vulnerability, Zero-Day & WAF Defense](SOC-Analyst-Roadmap-main%20(2026-27)/Vulnerability-Zero-Day-and-WAF/README.md) | Defensive vulnerability and web application protection |
 
----
+## 🧰 Defensive tool guides · root-level references
+
+These standalone guides live in the repository root—not inside the roadmap folder.
+
+| Guide | Covers |
+|---|---|
+| 🧭 [Threat Intelligence Tools](THREAT-INTELLIGENCE-TOOLS.md) | MISP, OpenCTI, VirusTotal, OTX, CISA KEV, STIX/TAXII |
+| 🔎 [Threat Hunting Tools](THREAT-HUNTING-TOOLS.md) | Sentinel, Splunk, Elastic, Zeek, osquery, Velociraptor, ATT&CK Navigator |
+| 🔬 [DFIR & Forensics Tools](DFIR-FORENSICS-TOOLS.md) | Autopsy, Volatility 3, Plaso, KAPE, Velociraptor, evidence handling |
+| 📊 [SIEM & SOAR Tools](SIEM-SOAR-TOOLS.md) | Sentinel, Splunk, Elastic, Google SecOps, Wazuh, XSOAR, Tines, Shuffle |
+| 🤖 [AI SOC Tools](AI-SOC-TOOLS.md) | Intezer and other AI-assisted SOC examples, evaluation and safe adoption |
 
 ## 🎓 Certification pathways
 
-Choose certifications based on your target role, current experience, region, budget and employer requirements. Certifications complement hands-on capability; they do not replace practical evidence. Always check the official provider page for current exam objectives, prerequisites, pricing and renewal policies.
+Select certifications according to your goals, experience, region, budget, and employer requirements. They complement hands-on capability; they do not replace practical evidence. Confirm current exams, eligibility, and renewal rules with each issuer.
 
-| Stage / direction | Examples to research | Good companion evidence |
+| Direction | Examples to research | Pair with |
 |---|---|---|
-| 🌱 **Starting out** | [CompTIA Security+](https://www.comptia.org/certifications/security) · [ISC2 Certified in Cybersecurity](https://www.isc2.org/certifications/cc) | Networking notes, basic security lab write-ups |
-| 🚨 **SOC analyst / incident response** | [CompTIA CySA+](https://www.comptia.org/certifications/cybersecurity-analyst) · [GIAC GCIH](https://www.giac.org/certifications/certified-incident-handler-gcih/) | Triage cases, timelines, incident reports |
-| 🔎 **Microsoft security operations** | [Microsoft SC-200](https://learn.microsoft.com/credentials/certifications/security-operations-analyst/) | Sentinel / Defender investigation portfolio |
-| 📊 **Splunk operations** | [Splunk certification paths](https://www.splunk.com/en_us/training/certification-track.html) | Search examples, dashboards, detection tuning notes |
-| ☁️ **Cloud security** | [AWS Security certification](https://aws.amazon.com/certification/certified-security-specialty/) · [Microsoft security credentials](https://learn.microsoft.com/credentials/browse/?products=azure) · [Google Cloud security training](https://cloud.google.com/learn/certification) | Cloud logging review and secure configuration project |
-| ☸️ **Kubernetes / cloud-native** | [Kubernetes certification](https://training.linuxfoundation.org/certification/) (review current security-focused options) | Threat model, workload-security design and lab evidence |
-| 🏛️ **Senior architecture / leadership** | [CISSP](https://www.isc2.org/certifications/cissp) · [CISM](https://www.isaca.org/credentialing/cism) | Architecture decisions, risk communication, leadership examples |
-
-> Certification names, availability and exam details can change. Some credentials have experience requirements; verify eligibility directly with the issuing organization before planning an exam.
+| 🌱 Starting out | [CompTIA Security+](https://www.comptia.org/certifications/security) · [ISC2 CC](https://www.isc2.org/certifications/cc) | Networking notes and foundational lab write-ups |
+| 🚨 SOC / incident response | [CompTIA CySA+](https://www.comptia.org/certifications/cybersecurity-analyst) · [GIAC GCIH](https://www.giac.org/certifications/certified-incident-handler-gcih/) | Triage cases, timelines, incident reports |
+| 🔎 Microsoft security operations | [Microsoft SC-200](https://learn.microsoft.com/credentials/certifications/security-operations-analyst/) | Sentinel / Defender investigation portfolio |
+| 📊 Splunk operations | [Splunk certification paths](https://www.splunk.com/en_us/training/certification-track.html) | Search examples, dashboards, tuning notes |
+| ☁️ Cloud security | [AWS Security Specialty](https://aws.amazon.com/certification/certified-security-specialty/) · [Microsoft credentials](https://learn.microsoft.com/credentials/browse/?products=azure) · [Google Cloud certifications](https://cloud.google.com/learn/certification) | Cloud logging and configuration review |
+| 🏛️ Senior architecture / leadership | [CISSP](https://www.isc2.org/certifications/cissp) · [CISM](https://www.isaca.org/credentialing/cism) | Architecture decisions, risk communication, leadership examples |
 
 ## 🔭 Future security drivers
 
-Security work will keep changing as organizations adopt new platforms and attackers adapt. Build durable fundamentals, then revisit these areas regularly:
-
-| Emerging driver | Defensive learning focus |
+| Driver | Defensive learning focus |
 |---|---|
-| 🤖 **AI and autonomous agents** | Model and agent threat modeling, data boundaries, tool permissions, human oversight, evaluation and auditability |
-| ☁️ **Cloud-native and platform engineering** | Workload identity, containers, Kubernetes controls, software delivery pipelines and runtime visibility |
-| 🪪 **Identity-first security** | Phishing-resistant authentication, privileged access, machine identities and identity attack-path analysis |
-| 🔗 **Software supply-chain risk** | Dependency governance, SBOMs, provenance, build integrity and secure-by-design practices |
-| 📈 **Security data and detection at scale** | Data quality, telemetry coverage, privacy-aware analytics, detection testing and operational metrics |
-| 🧩 **Continuous exposure management** | Asset context, exploitability, business impact, remediation validation and risk ownership |
-| ♻️ **Cyber resilience** | Recoverability, immutable backups, crisis exercises, continuity planning and tested response procedures |
-| 🏭 **OT, IoT and edge systems** | Safety and availability requirements, asset visibility, segmentation and vendor coordination |
-| 🔐 **Privacy and cryptographic change** | Data minimization, key lifecycle, crypto agility and post-quantum migration awareness |
-| 🌍 **Regulation and third-party risk** | Governance, evidence, supplier assurance, privacy obligations and jurisdiction-specific requirements |
+| 🤖 AI and autonomous agents | Threat modeling, data boundaries, tool permissions, oversight and evaluation |
+| ☁️ Cloud-native platforms | Workload identity, containers, Kubernetes controls and runtime visibility |
+| 🪪 Identity-first security | Phishing-resistant authentication, privileged access, machine identities |
+| 🔗 Software supply chain | Dependency governance, SBOMs, provenance and build integrity |
+| 📈 Security data engineering | Data quality, telemetry coverage, privacy-aware analytics and detection testing |
+| 🧩 Continuous exposure management | Asset context, exploitability, business impact and remediation validation |
+| ♻️ Cyber resilience | Recovery readiness, crisis exercises and tested response procedures |
+| 🏭 OT, IoT and edge | Safety, availability, asset visibility and segmentation |
+| 🔐 Privacy and cryptographic change | Data minimization, key lifecycle, crypto agility and post-quantum readiness |
+| 🌍 Governance and third-party risk | Evidence, supplier assurance, privacy obligations and risk ownership |
 
 ## 🗺️ Future learning plan
 
-Use this adaptable sequence as a guide—not a fixed timetable. Move forward when you can explain and demonstrate the learning outcome.
-
-| Phase | Learning goal | Suggested deliverable |
+| Phase | Goal | Suggested deliverable |
 |---|---|---|
-| **1 · Establish** | Strengthen networking, Linux/Windows, identity and security principles | Personal knowledge map and isolated lab plan |
-| **2 · Operate** | Practice alert triage, evidence capture, escalation and communication | Three synthetic or training-case investigation reports |
-| **3 · Detect** | Learn query languages, ATT&CK mapping, detection testing and tuning | Small detection pack with test cases and limitations |
-| **4 · Investigate** | Develop DFIR, threat-hunting, cloud and identity skills | Hunt report and cloud/identity visibility review |
-| **5 · Engineer** | Explore automation, security data, platform and AI security | Human-approved automation demo and AI threat model |
-| **6 · Design** | Develop architecture, resilience, governance and leadership skills | Architecture diagram, decision record and presentation |
-| **7 · Refresh** | Reassess skills and references as threats, technology and standards evolve | Quarterly learning review and updated portfolio |
+| **1 · Establish** | Networking, operating systems, identity and security principles | Knowledge map and isolated lab plan |
+| **2 · Operate** | Triage, evidence, escalation and communication | Synthetic-case investigation reports |
+| **3 · Detect** | Query languages, ATT&CK mapping, detection tests and tuning | Small detection pack with limitations |
+| **4 · Investigate** | DFIR, hunting, cloud and identity skills | Hunt report and visibility review |
+| **5 · Engineer** | Automation, security data, platforms and AI security | Human-approved automation demo and AI threat model |
+| **6 · Design** | Architecture, resilience, governance and leadership | Architecture diagram and decision record |
+| **7 · Refresh** | Reassess skills as technology and standards evolve | Quarterly learning review and updated portfolio |
 
-## 🧪 Labs & portfolio
-
-Build practical evidence as you learn. Use authorized labs and document assumptions and limitations.
-
-| Project | Portfolio evidence |
-|---|---|
-| 📝 SOC investigation walkthrough | Incident timeline, evidence notes and lessons learned |
-| 🎯 Detection-as-code starter pack | Scoped detections, test cases and tuning notes |
-| 🔎 Threat-hunting report | Hypothesis, data sources, findings and lab queries |
-| ☁️ Cloud logging review | Telemetry coverage diagram and visibility gaps |
-| ⚙️ SOAR approval workflow | Safe simulation, human approval, audit trail and rollback |
-| 🤖 AI application threat model | Trust boundaries, risk scenarios and mitigations for a toy application |
-| 🏗️ Architecture decision record | Diagram, assumptions, trade-offs and follow-up actions |
-
-## 🧰 Trusted references & tools
-
-Official documentation and learning resources are a good starting point. Tool names are examples to explore—not endorsements or a requirement to use them all.
-
-| Area | References |
-|---|---|
-| 🧭 Frameworks | [MITRE ATT&CK](https://attack.mitre.org/) · [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) · [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 🎯 Detection | [Sigma](https://sigmahq.io/) · [Microsoft Sentinel docs](https://learn.microsoft.com/azure/sentinel/) · [Splunk Security Content](https://research.splunk.com/) |
-| 🌐 Network visibility | [Wireshark docs](https://www.wireshark.org/docs/) · [Zeek docs](https://docs.zeek.org/) |
-| 🔬 Investigation | [Velociraptor docs](https://docs.velociraptor.app/) · [Security Onion docs](https://docs.securityonion.net/) |
-| 🧪 Safe learning | [MITRE ATT&CK resources](https://attack.mitre.org/resources/) · [CISA resources](https://www.cisa.gov/resources-tools) · Vendor training tenants and isolated home labs |
-
-## 📂 Source materials
+## 📂 Roadmap source materials
 
 - [📚 Main Documents index](SOC-Analyst-Roadmap-main%20(2026-27)/Main-Documents/README.md)
 - [🗺️ Roadmap resources](SOC-Analyst-Roadmap-main%20(2026-27)/ROADMAP/)
