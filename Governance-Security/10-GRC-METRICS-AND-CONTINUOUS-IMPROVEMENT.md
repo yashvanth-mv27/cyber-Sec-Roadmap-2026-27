@@ -2,45 +2,40 @@
 
 ## Purpose
 
-Good GRC reporting supports executive decisions and operational improvement. Metrics must answer clear questions and should be presented with scope, owners, and known limitations.
+Metrics should support better decisions, not just report activity. They should answer whether control coverage is complete, risks are being treated, and leadership decisions are timely and evidence-based.
 
-## Measurement categories
+## Core measurement model
 
-- coverage: whether critical services, controls, assets, obligations, and suppliers are in scope
-- control health: evidence freshness, audit result quality, and repeat failures
-- risk treatment: overdue actions, accepted risk reviews, and residual risk trend
-- compliance readiness: evidence and mapping quality, upcoming obligations, and closure of gaps
-- resilience: recovery test outcomes and corrective action progress
-- governance quality: ownership clarity, decision timeliness, and exception management
+- Coverage: Are critical services and obligations in scope?
+- Control health: Are controls active, current, and evidenced?
+- Risk treatment: Are material risks aging down and action owners accountable?
+- Compliance readiness: Is evidence available and current?
+- Resilience: Are recovery and continuity exercises producing credible results?
+- Governance quality: Are decisions timely and accountable?
 
 ## Example measures
 
-| Measure | Example question it answers |
+| Measure | Example use |
 |---|---|
-| Coverage | Are our critical services and obligations mapped and owned? |
-| Evidence freshness | Are control records current and reviewable? |
-| Action age | Which high-risk corrective actions are overdue? |
-| Exception exposure | Which deviations remain open and for how long? |
-| Repeated findings | Are we addressing common root causes or just symptoms? |
-| Supplier assurance currency | Which key third parties need reassessment? |
-| Recovery exercise outcome | Are recovery objectives credible and tested? |
+| Critical-service coverage | Identify missing control ownership |
+| Evidence freshness | Detect stale security attestations |
+| Open high-risk actions | Prioritize investment and escalation |
+| Exception age | Review deviations near expiry |
+| Repeat finding rate | Find root causes and systemic issues |
+| Supplier assessment currency | Track external dependency risk |
+| Recovery exercise outcome | Validate resilience assumptions |
 
 ## Reporting cadence
 
-- operational: near-term issues, evidence gaps, and urgent actions
-- monthly: risk movement, exceptions, repeat themes, supplier items
-- quarterly: material residual risk, investment trade-offs, and emerging obligations
-- event-driven: incidents, major changes, audit findings, or legal updates
+- operational review for active issues
+- periodic trend review for themes and overdue items
+- quarterly leadership review for residual risk and decisions required
+- event-driven review for incidents or material change
 
 ## Continuous improvement loop
 
-1. Understand the problem and affected scope.
-2. Analyze root causes and systemic drivers.
-3. Prioritize based on risk reduction and feasibility.
-4. Assign owner, due date, and evidence of completion.
-5. Validate that the change reduces the risk in practice.
-6. Update policy, risk, architecture, and control records.
+Collect evidence → analyze cause → prioritize action → assign owner → implement and validate → update risk and policy records → learn and repeat.
 
-## Executive reporting pattern
+## Executive briefing pattern
 
-For each material issue, include: what changed, impacted service, control status, residual risk, options, key decision, owner, and review date. Report uncertainty explicitly and resist the temptation to treat checklist completion as proof of effectiveness.
+Use plain language: what changed, what service is affected, current safeguards, residual risk, options, and the decision required.
